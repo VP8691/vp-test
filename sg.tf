@@ -4,7 +4,7 @@
 resource "aws_security_group" "ec2-sg" {
     name = "lct-sg"
     dynamic "ingress" {
-        for_each = [22,80]
+        for_each = [22,80,443,2205]
         iterator = port
         content {
           description = "TLS from VPC"
