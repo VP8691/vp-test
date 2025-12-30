@@ -1,4 +1,4 @@
-# Security group without Dynamic Block
+# Security group with Dynamic Block
 
 
 resource "aws_security_group" "ec2-sg" {
